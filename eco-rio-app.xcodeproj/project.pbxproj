@@ -13,6 +13,17 @@
 		732CF2FA2860FC95006ADD9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732CF2F82860FC95006ADD9F /* Main.storyboard */; };
 		732CF2FC2860FCA1006ADD9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 732CF2FB2860FCA1006ADD9F /* Assets.xcassets */; };
 		732CF2FF2860FCA1006ADD9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732CF2FD2860FCA1006ADD9F /* LaunchScreen.storyboard */; };
+		732CF30A28610641006ADD9F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732CF30928610640006ADD9F /* User.swift */; };
+		732CF30C28610943006ADD9F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732CF30B28610943006ADD9F /* Location.swift */; };
+		732CF30E28610A00006ADD9F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732CF30D28610A00006ADD9F /* Place.swift */; };
+		732CF31028610E73006ADD9F /* Evaluate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732CF30F28610E73006ADD9F /* Evaluate.swift */; };
+		732CF31228610F55006ADD9F /* Trail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732CF31128610F55006ADD9F /* Trail.swift */; };
+		732CF31428611019006ADD9F /* DifficultyLevelEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732CF31328611019006ADD9F /* DifficultyLevelEnum.swift */; };
+		732CF316286116F3006ADD9F /* OtherAttraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732CF315286116F3006ADD9F /* OtherAttraction.swift */; };
+		732CF3182861180F006ADD9F /* CategoryEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732CF3172861180F006ADD9F /* CategoryEnum.swift */; };
+		732CF31B28611CEC006ADD9F /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732CF31A28611CEC006ADD9F /* UserDAO.swift */; };
+		732CF31D28611D3C006ADD9F /* PlaceDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732CF31C28611D3C006ADD9F /* PlaceDAO.swift */; };
+		732CF31F28611F55006ADD9F /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732CF31E28611F55006ADD9F /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +35,17 @@
 		732CF2FB2860FCA1006ADD9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		732CF2FE2860FCA1006ADD9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		732CF3002860FCA1006ADD9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		732CF30928610640006ADD9F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		732CF30B28610943006ADD9F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		732CF30D28610A00006ADD9F /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		732CF30F28610E73006ADD9F /* Evaluate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluate.swift; sourceTree = "<group>"; };
+		732CF31128610F55006ADD9F /* Trail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trail.swift; sourceTree = "<group>"; };
+		732CF31328611019006ADD9F /* DifficultyLevelEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyLevelEnum.swift; sourceTree = "<group>"; };
+		732CF315286116F3006ADD9F /* OtherAttraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherAttraction.swift; sourceTree = "<group>"; };
+		732CF3172861180F006ADD9F /* CategoryEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEnum.swift; sourceTree = "<group>"; };
+		732CF31A28611CEC006ADD9F /* UserDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
+		732CF31C28611D3C006ADD9F /* PlaceDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDAO.swift; sourceTree = "<group>"; };
+		732CF31E28611F55006ADD9F /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 		732CF2F12860FC95006ADD9F /* eco-rio-app */ = {
 			isa = PBXGroup;
 			children = (
+				732CF31928611CB8006ADD9F /* persistence */,
 				732CF3082860FF7A006ADD9F /* controller */,
 				732CF3072860FF6F006ADD9F /* view */,
 				732CF3062860FF63006ADD9F /* model */,
@@ -70,6 +93,15 @@
 		732CF3062860FF63006ADD9F /* model */ = {
 			isa = PBXGroup;
 			children = (
+				732CF30928610640006ADD9F /* User.swift */,
+				732CF30B28610943006ADD9F /* Location.swift */,
+				732CF30D28610A00006ADD9F /* Place.swift */,
+				732CF30F28610E73006ADD9F /* Evaluate.swift */,
+				732CF31128610F55006ADD9F /* Trail.swift */,
+				732CF31328611019006ADD9F /* DifficultyLevelEnum.swift */,
+				732CF315286116F3006ADD9F /* OtherAttraction.swift */,
+				732CF3172861180F006ADD9F /* CategoryEnum.swift */,
+				732CF31E28611F55006ADD9F /* Login.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -89,6 +121,15 @@
 				732CF2F62860FC95006ADD9F /* ViewController.swift */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		732CF31928611CB8006ADD9F /* persistence */ = {
+			isa = PBXGroup;
+			children = (
+				732CF31A28611CEC006ADD9F /* UserDAO.swift */,
+				732CF31C28611D3C006ADD9F /* PlaceDAO.swift */,
+			);
+			path = persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,8 +203,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				732CF30A28610641006ADD9F /* User.swift in Sources */,
 				732CF2F72860FC95006ADD9F /* ViewController.swift in Sources */,
+				732CF3182861180F006ADD9F /* CategoryEnum.swift in Sources */,
+				732CF31228610F55006ADD9F /* Trail.swift in Sources */,
+				732CF31D28611D3C006ADD9F /* PlaceDAO.swift in Sources */,
+				732CF316286116F3006ADD9F /* OtherAttraction.swift in Sources */,
+				732CF30C28610943006ADD9F /* Location.swift in Sources */,
+				732CF31F28611F55006ADD9F /* Login.swift in Sources */,
+				732CF30E28610A00006ADD9F /* Place.swift in Sources */,
+				732CF31B28611CEC006ADD9F /* UserDAO.swift in Sources */,
 				732CF2F32860FC95006ADD9F /* AppDelegate.swift in Sources */,
+				732CF31428611019006ADD9F /* DifficultyLevelEnum.swift in Sources */,
+				732CF31028610E73006ADD9F /* Evaluate.swift in Sources */,
 				732CF2F52860FC95006ADD9F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
