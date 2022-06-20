@@ -56,15 +56,39 @@
 		732CF2F12860FC95006ADD9F /* eco-rio-app */ = {
 			isa = PBXGroup;
 			children = (
+				732CF3082860FF7A006ADD9F /* controller */,
+				732CF3072860FF6F006ADD9F /* view */,
+				732CF3062860FF63006ADD9F /* model */,
 				732CF2F22860FC95006ADD9F /* AppDelegate.swift */,
 				732CF2F42860FC95006ADD9F /* SceneDelegate.swift */,
-				732CF2F62860FC95006ADD9F /* ViewController.swift */,
-				732CF2F82860FC95006ADD9F /* Main.storyboard */,
 				732CF2FB2860FCA1006ADD9F /* Assets.xcassets */,
-				732CF2FD2860FCA1006ADD9F /* LaunchScreen.storyboard */,
 				732CF3002860FCA1006ADD9F /* Info.plist */,
 			);
 			path = "eco-rio-app";
+			sourceTree = "<group>";
+		};
+		732CF3062860FF63006ADD9F /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		732CF3072860FF6F006ADD9F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				732CF2F82860FC95006ADD9F /* Main.storyboard */,
+				732CF2FD2860FCA1006ADD9F /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		732CF3082860FF7A006ADD9F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				732CF2F62860FC95006ADD9F /* ViewController.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
