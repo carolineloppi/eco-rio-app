@@ -24,6 +24,11 @@
 		732CF31B28611CEC006ADD9F /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732CF31A28611CEC006ADD9F /* UserDAO.swift */; };
 		732CF31D28611D3C006ADD9F /* PlaceDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732CF31C28611D3C006ADD9F /* PlaceDAO.swift */; };
 		732CF31F28611F55006ADD9F /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732CF31E28611F55006ADD9F /* Login.swift */; };
+		732CF325286A7BBC006ADD9F /* ListAllScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732CF324286A7BBC006ADD9F /* ListAllScreen.storyboard */; };
+		732CF327286A7D57006ADD9F /* ListAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732CF326286A7D57006ADD9F /* ListAllViewController.swift */; };
+		732CF329286A861A006ADD9F /* forest-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 732CF328286A861A006ADD9F /* forest-circle.png */; };
+		732CF32C286A865A006ADD9F /* sea-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 732CF32A286A8659006ADD9F /* sea-circle.png */; };
+		732CF32D286A865A006ADD9F /* rock-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 732CF32B286A865A006ADD9F /* rock-circle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +51,11 @@
 		732CF31A28611CEC006ADD9F /* UserDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
 		732CF31C28611D3C006ADD9F /* PlaceDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDAO.swift; sourceTree = "<group>"; };
 		732CF31E28611F55006ADD9F /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		732CF324286A7BBC006ADD9F /* ListAllScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListAllScreen.storyboard; sourceTree = "<group>"; };
+		732CF326286A7D57006ADD9F /* ListAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAllViewController.swift; sourceTree = "<group>"; };
+		732CF328286A861A006ADD9F /* forest-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "forest-circle.png"; path = "../../../Downloads/Nova Pasta Com Itens/forest-circle.png"; sourceTree = "<group>"; };
+		732CF32A286A8659006ADD9F /* sea-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sea-circle.png"; path = "../../../Downloads/Nova Pasta Com Itens/sea-circle.png"; sourceTree = "<group>"; };
+		732CF32B286A865A006ADD9F /* rock-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rock-circle.png"; path = "../../../Downloads/Nova Pasta Com Itens/rock-circle.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +95,9 @@
 				732CF2F22860FC95006ADD9F /* AppDelegate.swift */,
 				732CF2F42860FC95006ADD9F /* SceneDelegate.swift */,
 				732CF2FB2860FCA1006ADD9F /* Assets.xcassets */,
+				732CF32B286A865A006ADD9F /* rock-circle.png */,
+				732CF32A286A8659006ADD9F /* sea-circle.png */,
+				732CF328286A861A006ADD9F /* forest-circle.png */,
 				732CF3002860FCA1006ADD9F /* Info.plist */,
 			);
 			path = "eco-rio-app";
@@ -111,6 +124,7 @@
 			children = (
 				732CF2F82860FC95006ADD9F /* Main.storyboard */,
 				732CF2FD2860FCA1006ADD9F /* LaunchScreen.storyboard */,
+				732CF324286A7BBC006ADD9F /* ListAllScreen.storyboard */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -119,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				732CF2F62860FC95006ADD9F /* ViewController.swift */,
+				732CF326286A7D57006ADD9F /* ListAllViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -190,8 +205,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				732CF325286A7BBC006ADD9F /* ListAllScreen.storyboard in Resources */,
 				732CF2FF2860FCA1006ADD9F /* LaunchScreen.storyboard in Resources */,
 				732CF2FC2860FCA1006ADD9F /* Assets.xcassets in Resources */,
+				732CF32C286A865A006ADD9F /* sea-circle.png in Resources */,
+				732CF329286A861A006ADD9F /* forest-circle.png in Resources */,
+				732CF32D286A865A006ADD9F /* rock-circle.png in Resources */,
 				732CF2FA2860FC95006ADD9F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +232,7 @@
 				732CF31F28611F55006ADD9F /* Login.swift in Sources */,
 				732CF30E28610A00006ADD9F /* Place.swift in Sources */,
 				732CF31B28611CEC006ADD9F /* UserDAO.swift in Sources */,
+				732CF327286A7D57006ADD9F /* ListAllViewController.swift in Sources */,
 				732CF2F32860FC95006ADD9F /* AppDelegate.swift in Sources */,
 				732CF31428611019006ADD9F /* DifficultyLevelEnum.swift in Sources */,
 				732CF31028610E73006ADD9F /* Evaluate.swift in Sources */,

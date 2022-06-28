@@ -8,10 +8,10 @@
 import Foundation
 
 class Location {
-    var latitude: Int
-    var longitude: Int
+    var latitude: Float
+    var longitude: Float
     
-    init(latitude: Int, longitude: Int){
+    init(latitude: Float, longitude: Float){
         self.latitude  = latitude
         self.longitude = longitude
     }

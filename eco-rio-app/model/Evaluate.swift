@@ -14,9 +14,10 @@ class Evaluate {
     var placeId: Int
     
     
-    init(userRank: Float, userId:Int){
+    init(userRank: Float, userId:Int, placeId: Int){
         self.userRank = userRank
         self.userId = userId
+        self.placeId = placeId
     }
     
 }
