@@ -29,6 +29,10 @@
 		732CF329286A861A006ADD9F /* forest-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 732CF328286A861A006ADD9F /* forest-circle.png */; };
 		732CF32C286A865A006ADD9F /* sea-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 732CF32A286A8659006ADD9F /* sea-circle.png */; };
 		732CF32D286A865A006ADD9F /* rock-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 732CF32B286A865A006ADD9F /* rock-circle.png */; };
+		DE64B7F4286AB5DD00D28E22 /* Register.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE64B7F3286AB5DD00D28E22 /* Register.xib */; };
+		DE64B7FB286ABE2000D28E22 /* heart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE64B7F7286ABE2000D28E22 /* heart.jpg */; };
+		DE64B7FC286ABE2000D28E22 /* apple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE64B7F8286ABE2000D28E22 /* apple.jpg */; };
+		DE64B7FD286ABE2000D28E22 /* facebook.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE64B7F9286ABE2000D28E22 /* facebook.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,14 @@
 		732CF328286A861A006ADD9F /* forest-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "forest-circle.png"; path = "../../../Downloads/Nova Pasta Com Itens/forest-circle.png"; sourceTree = "<group>"; };
 		732CF32A286A8659006ADD9F /* sea-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sea-circle.png"; path = "../../../Downloads/Nova Pasta Com Itens/sea-circle.png"; sourceTree = "<group>"; };
 		732CF32B286A865A006ADD9F /* rock-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rock-circle.png"; path = "../../../Downloads/Nova Pasta Com Itens/rock-circle.png"; sourceTree = "<group>"; };
+		DE64B7F3286AB5DD00D28E22 /* Register.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Register.xib; sourceTree = "<group>"; };
+		DE64B7F7286ABE2000D28E22 /* heart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = heart.jpg; path = ../../../Downloads/heart.jpg; sourceTree = "<group>"; };
+		DE64B7F8286ABE2000D28E22 /* apple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = apple.jpg; path = ../../../Downloads/apple.jpg; sourceTree = "<group>"; };
+		DE64B7F9286ABE2000D28E22 /* facebook.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = facebook.jpg; path = ../../../Downloads/facebook.jpg; sourceTree = "<group>"; };
+		DE64B800286ABE6300D28E22 /* facebook.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = facebook.jpg; sourceTree = "<group>"; };
+		DE64B801286ABE6E00D28E22 /* google.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = google.jpg; sourceTree = "<group>"; };
+		DE64B802286ABE7600D28E22 /* heart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = heart.jpg; sourceTree = "<group>"; };
+		DE64B803286ABE9A00D28E22 /* apple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apple.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,12 +100,16 @@
 		732CF2F12860FC95006ADD9F /* eco-rio-app */ = {
 			isa = PBXGroup;
 			children = (
+				DE64B7FF286ABE4600D28E22 /* Resources */,
 				732CF31928611CB8006ADD9F /* persistence */,
 				732CF3082860FF7A006ADD9F /* controller */,
 				732CF3072860FF6F006ADD9F /* view */,
 				732CF3062860FF63006ADD9F /* model */,
 				732CF2F22860FC95006ADD9F /* AppDelegate.swift */,
 				732CF2F42860FC95006ADD9F /* SceneDelegate.swift */,
+				DE64B7F8286ABE2000D28E22 /* apple.jpg */,
+				DE64B7F9286ABE2000D28E22 /* facebook.jpg */,
+				DE64B7F7286ABE2000D28E22 /* heart.jpg */,
 				732CF2FB2860FCA1006ADD9F /* Assets.xcassets */,
 				732CF32B286A865A006ADD9F /* rock-circle.png */,
 				732CF32A286A8659006ADD9F /* sea-circle.png */,
@@ -125,6 +141,7 @@
 				732CF2F82860FC95006ADD9F /* Main.storyboard */,
 				732CF2FD2860FCA1006ADD9F /* LaunchScreen.storyboard */,
 				732CF324286A7BBC006ADD9F /* ListAllScreen.storyboard */,
+				DE64B7F3286AB5DD00D28E22 /* Register.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -145,6 +162,17 @@
 				732CF31C28611D3C006ADD9F /* PlaceDAO.swift */,
 			);
 			path = persistence;
+			sourceTree = "<group>";
+		};
+		DE64B7FF286ABE4600D28E22 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE64B803286ABE9A00D28E22 /* apple.jpg */,
+				DE64B802286ABE7600D28E22 /* heart.jpg */,
+				DE64B801286ABE6E00D28E22 /* google.jpg */,
+				DE64B800286ABE6300D28E22 /* facebook.jpg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +239,11 @@
 				732CF32C286A865A006ADD9F /* sea-circle.png in Resources */,
 				732CF329286A861A006ADD9F /* forest-circle.png in Resources */,
 				732CF32D286A865A006ADD9F /* rock-circle.png in Resources */,
+                        	DE64B7F4286AB5DD00D28E22 /* Register.xib in Resources */,
+				DE64B7FC286ABE2000D28E22 /* apple.jpg in Resources */,
 				732CF2FA2860FC95006ADD9F /* Main.storyboard in Resources */,
+				DE64B7FD286ABE2000D28E22 /* facebook.jpg in Resources */,
+				DE64B7FB286ABE2000D28E22 /* heart.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

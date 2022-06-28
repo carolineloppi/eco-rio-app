@@ -1,13 +1,12 @@
 //
-//  UserDAO.swift
+//  UserDao.swift
 //  eco-rio-app
 //
-//  Created by Caroline Loppi on 20/06/22.
+//  Created by user221974 on 6/28/22.
 //
 
 import Foundation
-
-class UserDAO {
+class UserDao {
     
     public static var usersList: [User]=[User]()
     init(){
@@ -24,8 +23,6 @@ class UserDAO {
         return usersList
     }
 
-    //TODO
-    func getUser(login: String, password: String) -> User?{
-        return nil
-    }
+
+
 }
