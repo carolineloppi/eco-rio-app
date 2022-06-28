@@ -21,6 +21,11 @@ class UserDAO {
     
     public static func getUsers() -> [User] {
         
+        let location = Location(latitude: 10, longitude: 20);
+        let user1 = User(id: 1, email: "wendy@gmail.com", name: "Wendy", userName: "wendy", password: "123", location: location, evaluations: []);
+        
+        usersList.append(user1)
+        
         return usersList
     }
 
