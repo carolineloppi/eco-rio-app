@@ -11,6 +11,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var passwordText: UITextField!
     @IBOutlet weak var userText: UITextField!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -19,8 +22,10 @@ class ViewController: UIViewController {
 
 
     @IBAction func loginBtn(_ sender: Any) {
-        if(true){
-            
+        var loginObject = Login(user:"wendy@gmail.com", password: "123")
+        if(loginObject.authenticate()){
+            performSegue(withIdentifier: "telaListAll", sender: self)
+            print("login Success!!!!")
         }else{
             let alert=UIAlertController(title: "Alerta",
                                 message:"login senha invalido", preferredStyle:UIAlertController.Style.alert)
