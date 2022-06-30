@@ -13,13 +13,13 @@ class User {
     var name:String
     var userName: String
     var password: String
-    var location: Location
+    var location: Location?
     var evaluations: [Evaluate]
     //var locationChangedObserver
     //Dúvida: lista de que?
     
     
-    init(id: Int, email:String, name:String, userName: String, password: String, location: Location, evaluations: [Evaluate]){
+    init(id: Int, email:String, name:String, userName: String, password: String, location: Location?, evaluations: [Evaluate]){
         //generate random id
         self.id = 0
         self.email = email

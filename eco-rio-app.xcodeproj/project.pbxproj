@@ -26,7 +26,6 @@
 		732CF31F28611F55006ADD9F /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732CF31E28611F55006ADD9F /* Login.swift */; };
 		732CF325286A7BBC006ADD9F /* ListAllScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732CF324286A7BBC006ADD9F /* ListAllScreen.storyboard */; };
 		732CF327286A7D57006ADD9F /* ListAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732CF326286A7D57006ADD9F /* ListAllViewController.swift */; };
-		DE64B7F4286AB5DD00D28E22 /* Register.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE64B7F3286AB5DD00D28E22 /* Register.xib */; };
 		DE64B7FB286ABE2000D28E22 /* heart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE64B7F7286ABE2000D28E22 /* heart.jpg */; };
 		DE64B7FC286ABE2000D28E22 /* apple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE64B7F8286ABE2000D28E22 /* apple.jpg */; };
 		DE64B7FD286ABE2000D28E22 /* facebook.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE64B7F9286ABE2000D28E22 /* facebook.jpg */; };
@@ -54,7 +53,6 @@
 		732CF31E28611F55006ADD9F /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		732CF324286A7BBC006ADD9F /* ListAllScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListAllScreen.storyboard; sourceTree = "<group>"; };
 		732CF326286A7D57006ADD9F /* ListAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAllViewController.swift; sourceTree = "<group>"; };
-		DE64B7F3286AB5DD00D28E22 /* Register.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Register.xib; sourceTree = "<group>"; };
 		DE64B7F7286ABE2000D28E22 /* heart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = heart.jpg; path = ../../../Downloads/heart.jpg; sourceTree = "<group>"; };
 		DE64B7F8286ABE2000D28E22 /* apple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = apple.jpg; path = ../../../Downloads/apple.jpg; sourceTree = "<group>"; };
 		DE64B7F9286ABE2000D28E22 /* facebook.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = facebook.jpg; path = ../../../Downloads/facebook.jpg; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 				732CF2F82860FC95006ADD9F /* Main.storyboard */,
 				732CF2FD2860FCA1006ADD9F /* LaunchScreen.storyboard */,
 				732CF324286A7BBC006ADD9F /* ListAllScreen.storyboard */,
-				DE64B7F3286AB5DD00D28E22 /* Register.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -227,7 +224,6 @@
 				732CF325286A7BBC006ADD9F /* ListAllScreen.storyboard in Resources */,
 				732CF2FF2860FCA1006ADD9F /* LaunchScreen.storyboard in Resources */,
 				732CF2FC2860FCA1006ADD9F /* Assets.xcassets in Resources */,
-				DE64B7F4286AB5DD00D28E22 /* Register.xib in Resources */,
 				DE64B7FC286ABE2000D28E22 /* apple.jpg in Resources */,
 				732CF2FA2860FC95006ADD9F /* Main.storyboard in Resources */,
 				DE64B7FD286ABE2000D28E22 /* facebook.jpg in Resources */,
