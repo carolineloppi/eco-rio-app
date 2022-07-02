@@ -10,7 +10,9 @@ import Foundation
 class UserDAO {
     
     public static var usersList: [User]=[User]()
-    init(){
+    
+    static func loadUsers(){
+        print("I was called!!")
         let location = Location(latitude: 10, longitude: 20);
         let user1 = User(id: 1, email: "wendy@gmail.com", name: "Wendy", userName: "wendy", password: "123", location: location, evaluations: [])
         let user2 = User(id: 2, email: "pepe@gmail.com", name: "Pepe", userName: "Pepe", password: "123", location: location, evaluations: [])
@@ -25,9 +27,10 @@ class UserDAO {
     }
     
     public static func getUsers() -> [User] {
-        
-                
-        return usersList
+        self.loadUsers()
+        print("THE LIST")
+        print(UserDAO.usersList)
+        return UserDAO.usersList
     }
 
     //TODO

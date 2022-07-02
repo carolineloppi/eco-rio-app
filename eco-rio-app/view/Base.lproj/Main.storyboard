@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -175,6 +175,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="cadastroBtn:" destination="nsz-cr-iSl" eventType="touchUpInside" id="8Wp-K4-Lbh"/>
+                                    <segue destination="JzL-Y4-Wbb" kind="show" identifier="telaListAll" id="fkR-NL-urW"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_______________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Edw-hb-Abi">
@@ -237,7 +238,17 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vyv-Kc-qoJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="QMB-tI-5Ns" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="865.21739130434787" y="72.991071428571431"/>
+            <point key="canvasLocation" x="1222" y="102"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="0Qz-sB-ty8">
+            <objects>
+                <viewControllerPlaceholder id="JzL-Y4-Wbb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="l1L-VN-mG5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3rA-cy-nOM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1925" y="-27"/>
         </scene>
         <!--ListAllViewController-->
         <scene sceneID="U9a-cn-SC3">
@@ -247,12 +258,12 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQf-6D-6SW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="562" y="-267"/>
+            <point key="canvasLocation" x="672" y="-37"/>
         </scene>
     </scenes>
     <resources>
         <image name="apple.jpg" width="34.5" height="37.5"/>
-        <image name="heart.jpg" width="32" height="31"/>
+        <image name="heart.jpg" width="512" height="512"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

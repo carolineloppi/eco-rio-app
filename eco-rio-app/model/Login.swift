@@ -19,8 +19,12 @@ class Login {
     }
     
     func authenticate() -> Bool {
+        
         //TODO authenticate
         var currentUsers=UserDAO.getUsers()
+        print(currentUsers)
+        print(self.user)
+        print(self.password)
         
         if(currentUsers.contains(where: {$0.email==self.user && $0.password==self.password})){
             return true
