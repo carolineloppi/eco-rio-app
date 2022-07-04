@@ -62,7 +62,7 @@ class InMemoryPlaceDAO : PlaceDAO{
     
     public func hasVisitedPlace(placeId: Int) -> Bool{
         
-        let activeUser  = UserDAO.currentActiveUser
+        let activeUser  = Session.getUsersDAO().currentActiveUser
         let activeUserEvaluations = activeUser!.evaluations
              
         if(activeUserEvaluations.contains(where: {$0.placeId == placeId})){

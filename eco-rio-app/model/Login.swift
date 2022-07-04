@@ -7,7 +7,6 @@
 
 import Foundation
 
-//TODO: como implementar um singleton
 class Login {
     
     var user:String
@@ -19,13 +18,14 @@ class Login {
     }
     
     func authenticate() -> Bool {
-        
-        let currentUsers=UserDAO.getUsers()
+                
+        let usersDAO = Session.getUsersDAO()
+        let currentUsers=usersDAO.getUsers()
         
         if(currentUsers.contains(where: {$0.email==self.user && $0.password==self.password})){
             
             //Sets current active user
-            UserDAO.currentActiveUser = UserDAO.getUser(login: self.user, password: self.password) ?? nil
+            usersDAO.currentActiveUser = usersDAO.getUser(login: self.user, password: self.password) ?? nil
             
             return true
         }

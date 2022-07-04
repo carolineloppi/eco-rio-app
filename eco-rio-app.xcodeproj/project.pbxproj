@@ -30,6 +30,8 @@
 		73BAA789287259C900957FA1 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 73BAA788287259C800957FA1 /* star.png */; };
 		73BAA78C28725D0A00957FA1 /* unvisited.png in Resources */ = {isa = PBXBuildFile; fileRef = 73BAA78A28725D0800957FA1 /* unvisited.png */; };
 		73BAA78D28725D0A00957FA1 /* visited.png in Resources */ = {isa = PBXBuildFile; fileRef = 73BAA78B28725D0900957FA1 /* visited.png */; };
+		73BAA78F28738C7800957FA1 /* InMemoryUserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BAA78E28738C7700957FA1 /* InMemoryUserDAO.swift */; };
+		73BAA791287392CD00957FA1 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BAA790287392CD00957FA1 /* Session.swift */; };
 		73C2BC5228709ECF00C526F8 /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 73C2BC4D28709ECF00C526F8 /* earth.png */; };
 		73C2BC5328709ECF00C526F8 /* rock-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 73C2BC4E28709ECF00C526F8 /* rock-circle.png */; };
 		73C2BC5428709ECF00C526F8 /* forest-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 73C2BC4F28709ECF00C526F8 /* forest-circle.png */; };
@@ -64,6 +66,8 @@
 		73BAA788287259C800957FA1 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		73BAA78A28725D0800957FA1 /* unvisited.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unvisited.png; sourceTree = "<group>"; };
 		73BAA78B28725D0900957FA1 /* visited.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = visited.png; sourceTree = "<group>"; };
+		73BAA78E28738C7700957FA1 /* InMemoryUserDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryUserDAO.swift; sourceTree = "<group>"; };
+		73BAA790287392CD00957FA1 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		73C2BC4D28709ECF00C526F8 /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth.png; sourceTree = "<group>"; };
 		73C2BC4E28709ECF00C526F8 /* rock-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rock-circle.png"; sourceTree = "<group>"; };
 		73C2BC4F28709ECF00C526F8 /* forest-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forest-circle.png"; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 			children = (
 				732CF2F62860FC95006ADD9F /* ViewController.swift */,
 				732CF326286A7D57006ADD9F /* ListAllViewController.swift */,
+				73BAA790287392CD00957FA1 /* Session.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 				732CF31A28611CEC006ADD9F /* UserDAO.swift */,
 				732CF31C28611D3C006ADD9F /* PlaceDAO.swift */,
 				733A3997286B817600160B4E /* InMemoryPlaceDAO.swift */,
+				73BAA78E28738C7700957FA1 /* InMemoryUserDAO.swift */,
 			);
 			path = persistence;
 			sourceTree = "<group>";
@@ -257,8 +263,10 @@
 				732CF316286116F3006ADD9F /* OtherAttraction.swift in Sources */,
 				732CF30C28610943006ADD9F /* Location.swift in Sources */,
 				732CF31F28611F55006ADD9F /* Login.swift in Sources */,
+				73BAA791287392CD00957FA1 /* Session.swift in Sources */,
 				732CF30E28610A00006ADD9F /* Place.swift in Sources */,
 				732CF31B28611CEC006ADD9F /* UserDAO.swift in Sources */,
+				73BAA78F28738C7800957FA1 /* InMemoryUserDAO.swift in Sources */,
 				73BAA7872872513F00957FA1 /* InMemoryPlaceDAO.swift in Sources */,
 				732CF327286A7D57006ADD9F /* ListAllViewController.swift in Sources */,
 				732CF2F32860FC95006ADD9F /* AppDelegate.swift in Sources */,

@@ -16,7 +16,6 @@ class MyCustomCell: UITableViewCell{
 
 class ListAllViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
    
-    var placesDAO = InMemoryPlaceDAO(placesList: [])
     var places: [Place] = []
 
     @IBOutlet var tableView: UITableView!
@@ -27,7 +26,7 @@ class ListAllViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.delegate = self
         tableView.dataSource = self
         
-        self.places = placesDAO.getAllPlaces()
+        self.places = Session.getPlacesDAO().getAllPlaces()
     }
 
     
@@ -45,7 +44,7 @@ class ListAllViewController: UIViewController, UITableViewDelegate, UITableViewD
         customCell.placeName?.text = self.places[indexPath.row].name
         
         
-        if(placesDAO.hasVisitedPlace(placeId: self.places[indexPath.row].id)){
+        if(Session.getPlacesDAO().hasVisitedPlace(placeId: self.places[indexPath.row].id)){
                                     
             customCell.visitedImg?.image = UIImage(named: "visited.png")
         }

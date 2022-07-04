@@ -39,8 +39,8 @@ class ViewController: UIViewController {
             //let loginObject = Login(user:emailtmp, password: passtmp)
             
             if(passtmp == passconfirmtmp){
-                let userTmp = User(id: UserDAO.usersList.count+1, email: emailtmp, name: emailtmp, userName: emailtmp, password: passtmp, location: nil, evaluations: []);
-                UserDAO.usersList.append(userTmp)
+                let userTmp = User(id: Session.getUsersDAO().usersList.count+1, email: emailtmp, name: emailtmp, userName: emailtmp, password: passtmp, location: nil, evaluations: []);
+                Session.getUsersDAO().usersList.append(userTmp)
                 
                 performSegue(withIdentifier: "telaListAll", sender: self)
             }
