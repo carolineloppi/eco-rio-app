@@ -26,6 +26,10 @@
 		732CF31F28611F55006ADD9F /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732CF31E28611F55006ADD9F /* Login.swift */; };
 		732CF325286A7BBC006ADD9F /* ListAllScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732CF324286A7BBC006ADD9F /* ListAllScreen.storyboard */; };
 		732CF327286A7D57006ADD9F /* ListAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732CF326286A7D57006ADD9F /* ListAllViewController.swift */; };
+		73BAA7872872513F00957FA1 /* InMemoryPlaceDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733A3997286B817600160B4E /* InMemoryPlaceDAO.swift */; };
+		73BAA789287259C900957FA1 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 73BAA788287259C800957FA1 /* star.png */; };
+		73BAA78C28725D0A00957FA1 /* unvisited.png in Resources */ = {isa = PBXBuildFile; fileRef = 73BAA78A28725D0800957FA1 /* unvisited.png */; };
+		73BAA78D28725D0A00957FA1 /* visited.png in Resources */ = {isa = PBXBuildFile; fileRef = 73BAA78B28725D0900957FA1 /* visited.png */; };
 		73C2BC5228709ECF00C526F8 /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 73C2BC4D28709ECF00C526F8 /* earth.png */; };
 		73C2BC5328709ECF00C526F8 /* rock-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 73C2BC4E28709ECF00C526F8 /* rock-circle.png */; };
 		73C2BC5428709ECF00C526F8 /* forest-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 73C2BC4F28709ECF00C526F8 /* forest-circle.png */; };
@@ -56,6 +60,10 @@
 		732CF31E28611F55006ADD9F /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		732CF324286A7BBC006ADD9F /* ListAllScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListAllScreen.storyboard; sourceTree = "<group>"; };
 		732CF326286A7D57006ADD9F /* ListAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAllViewController.swift; sourceTree = "<group>"; };
+		733A3997286B817600160B4E /* InMemoryPlaceDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryPlaceDAO.swift; sourceTree = "<group>"; };
+		73BAA788287259C800957FA1 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		73BAA78A28725D0800957FA1 /* unvisited.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unvisited.png; sourceTree = "<group>"; };
+		73BAA78B28725D0900957FA1 /* visited.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = visited.png; sourceTree = "<group>"; };
 		73C2BC4D28709ECF00C526F8 /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth.png; sourceTree = "<group>"; };
 		73C2BC4E28709ECF00C526F8 /* rock-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rock-circle.png"; sourceTree = "<group>"; };
 		73C2BC4F28709ECF00C526F8 /* forest-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forest-circle.png"; sourceTree = "<group>"; };
@@ -101,6 +109,9 @@
 				732CF2F22860FC95006ADD9F /* AppDelegate.swift */,
 				732CF2F42860FC95006ADD9F /* SceneDelegate.swift */,
 				732CF2FB2860FCA1006ADD9F /* Assets.xcassets */,
+				73BAA78A28725D0800957FA1 /* unvisited.png */,
+				73BAA78B28725D0900957FA1 /* visited.png */,
+				73BAA788287259C800957FA1 /* star.png */,
 				73C2BC5728709F1700C526F8 /* apple.jpg */,
 				73C2BC4D28709ECF00C526F8 /* earth.png */,
 				73C2BC4F28709ECF00C526F8 /* forest-circle.png */,
@@ -152,6 +163,7 @@
 			children = (
 				732CF31A28611CEC006ADD9F /* UserDAO.swift */,
 				732CF31C28611D3C006ADD9F /* PlaceDAO.swift */,
+				733A3997286B817600160B4E /* InMemoryPlaceDAO.swift */,
 			);
 			path = persistence;
 			sourceTree = "<group>";
@@ -217,12 +229,15 @@
 				73C2BC5328709ECF00C526F8 /* rock-circle.png in Resources */,
 				732CF325286A7BBC006ADD9F /* ListAllScreen.storyboard in Resources */,
 				73C2BC5528709ECF00C526F8 /* heart.png in Resources */,
+				73BAA78C28725D0A00957FA1 /* unvisited.png in Resources */,
 				732CF2FF2860FCA1006ADD9F /* LaunchScreen.storyboard in Resources */,
 				732CF2FC2860FCA1006ADD9F /* Assets.xcassets in Resources */,
 				73C2BC5228709ECF00C526F8 /* earth.png in Resources */,
+				73BAA78D28725D0A00957FA1 /* visited.png in Resources */,
 				732CF2FA2860FC95006ADD9F /* Main.storyboard in Resources */,
 				73C2BC5428709ECF00C526F8 /* forest-circle.png in Resources */,
 				73C2BC5628709ECF00C526F8 /* sea-circle.png in Resources */,
+				73BAA789287259C900957FA1 /* star.png in Resources */,
 				73C2BC5828709F1700C526F8 /* apple.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +259,7 @@
 				732CF31F28611F55006ADD9F /* Login.swift in Sources */,
 				732CF30E28610A00006ADD9F /* Place.swift in Sources */,
 				732CF31B28611CEC006ADD9F /* UserDAO.swift in Sources */,
+				73BAA7872872513F00957FA1 /* InMemoryPlaceDAO.swift in Sources */,
 				732CF327286A7D57006ADD9F /* ListAllViewController.swift in Sources */,
 				732CF2F32860FC95006ADD9F /* AppDelegate.swift in Sources */,
 				732CF31428611019006ADD9F /* DifficultyLevelEnum.swift in Sources */,

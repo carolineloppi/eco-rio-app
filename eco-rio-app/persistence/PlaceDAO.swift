@@ -9,21 +9,24 @@ import Foundation
 
 class PlaceDAO {
     
-    func updatePlaces(){}
     
-    func getPlaces() -> [Place]{
-        let sugarLoafLocation =  Location(latitude: 22.9493, longitude: 43.1546)
-        let sugarLoafPlace =  Place(id: 1, name: "Trilha do Morro da Urca", meanRank: 5, visitCount: 2, photosURL: [], endemicSpecies: ["Bromélias", "Orquídeas"], evaluations: [], location: sugarLoafLocation)
-        
+    var placesList: [Place]
+    
+    init(placesList: [Place]){
+        self.placesList = placesList
+    }
+    
+    
+    func getAllPlaces() -> [Place]{
         return []
     }
     
-    func getPlaces(location : Location) -> [Place]{
+    func getPlaces(userlocation : Location, interestRange: Int) -> [Place]{
         return []
     }
     
     func getRank(place: Place) -> Int{
-        return 5;
+        return 0;
     }
 
 }
