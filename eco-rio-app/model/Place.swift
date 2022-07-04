@@ -22,8 +22,8 @@ class Place {
     
     
     init(id: Int, name:String, meanRank:Float, visitCount: Int,photosURL: [String], endemicSpecies: [String], evaluations:[Evaluate], location: Location){
-        //generate random id
-        self.id = 0
+
+        self.id = id
         self.name = name
         self.meanRank = meanRank
         self.visitCount = visitCount

@@ -44,7 +44,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7JL-1h-WwO">
-                                <rect key="frame" x="0.0" y="287" width="414" height="320"/>
+                                <rect key="frame" x="0.0" y="287" width="414" height="547"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -73,7 +73,7 @@
                                                     <rect key="frame" x="369" y="7" width="33" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unvisited.png" translatesAutoresizingMaskIntoConstraints="NO" id="4vR-HL-AjW">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="visitedImg" translatesAutoresizingMaskIntoConstraints="NO" id="4vR-HL-AjW">
                                                     <rect key="frame" x="12" y="6" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -82,6 +82,7 @@
                                         <connections>
                                             <outlet property="placeName" destination="0ml-GU-0Hn" id="TCJ-fb-lrA"/>
                                             <outlet property="placeRank" destination="AOr-a4-g6B" id="lGX-Wy-Xwc"/>
+                                            <outlet property="visitedImg" destination="4vR-HL-AjW" id="hVk-xH-zPQ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -103,7 +104,6 @@
         <image name="earth.png" width="512" height="512"/>
         <image name="heart.png" width="512" height="512"/>
         <image name="star.png" width="395" height="395"/>
-        <image name="unvisited.png" width="512" height="512"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

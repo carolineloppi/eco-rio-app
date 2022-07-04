@@ -18,10 +18,19 @@ class User {
     //var locationChangedObserver
     //Dúvida: lista de que?
     
+    init(){
+        self.id = 0
+        self.email = ""
+        self.name = ""
+        self.userName = ""
+        self.password = ""
+        self.location = nil
+        self.evaluations = []
+    }
     
     init(id: Int, email:String, name:String, userName: String, password: String, location: Location?, evaluations: [Evaluate]){
-        //generate random id
-        self.id = 0
+
+        self.id = id
         self.email = email
         self.name = name
         self.userName = userName

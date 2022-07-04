@@ -10,6 +10,8 @@ import UIKit
 class MyCustomCell: UITableViewCell{
     @IBOutlet weak var placeName: UILabel!
     @IBOutlet weak var placeRank: UILabel!
+    
+    @IBOutlet weak var visitedImg: UIImageView!
 }
 
 class ListAllViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
@@ -41,6 +43,17 @@ class ListAllViewController: UIViewController, UITableViewDelegate, UITableViewD
         customCell.placeRank?.text = rankFormatted
         
         customCell.placeName?.text = self.places[indexPath.row].name
+        
+        
+        if(placesDAO.hasVisitedPlace(placeId: self.places[indexPath.row].id)){
+                                    
+            customCell.visitedImg?.image = UIImage(named: "visited.png")
+        }
+        else{
+            customCell.visitedImg?.image = UIImage(named: "unvisited.png")
+        }
+
+        
         
         return customCell
     }

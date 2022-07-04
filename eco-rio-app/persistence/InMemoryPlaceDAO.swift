@@ -58,9 +58,18 @@ class InMemoryPlaceDAO : PlaceDAO{
         
         //Populates placesList with InMemoryPlaces
         self.placesList.append(contentsOf: inMemoryPlaces)
+    }
+    
+    public func hasVisitedPlace(placeId: Int) -> Bool{
         
-        print("Places")
-        print(self.placesList)
+        let activeUser  = UserDAO.currentActiveUser
+        let activeUserEvaluations = activeUser!.evaluations
+             
+        if(activeUserEvaluations.contains(where: {$0.placeId == placeId})){
+            return true
+        }else{
+            return false
+        }
     }
 
 }
