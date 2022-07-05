@@ -45,6 +45,8 @@
 		73BAA7A72873BD2800957FA1 /* praia-leblon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73BAA79E2873BD2800957FA1 /* praia-leblon.jpg */; };
 		73BAA7A92873CB2200957FA1 /* DetailingOtherPlaces.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73BAA7A82873CB2100957FA1 /* DetailingOtherPlaces.storyboard */; };
 		73BAA7AD2873CCCA00957FA1 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BAA7AC2873CCC900957FA1 /* DetailedViewController.swift */; };
+		73BAA7AF2874632B00957FA1 /* viewers.png in Resources */ = {isa = PBXBuildFile; fileRef = 73BAA7AE2874632A00957FA1 /* viewers.png */; };
+		73BAA7B12874655300957FA1 /* fake-recommendations.png in Resources */ = {isa = PBXBuildFile; fileRef = 73BAA7B02874655200957FA1 /* fake-recommendations.png */; };
 		73C2BC5228709ECF00C526F8 /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 73C2BC4D28709ECF00C526F8 /* earth.png */; };
 		73C2BC5328709ECF00C526F8 /* rock-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 73C2BC4E28709ECF00C526F8 /* rock-circle.png */; };
 		73C2BC5428709ECF00C526F8 /* forest-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 73C2BC4F28709ECF00C526F8 /* forest-circle.png */; };
@@ -94,6 +96,8 @@
 		73BAA79E2873BD2800957FA1 /* praia-leblon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "praia-leblon.jpg"; sourceTree = "<group>"; };
 		73BAA7A82873CB2100957FA1 /* DetailingOtherPlaces.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailingOtherPlaces.storyboard; sourceTree = "<group>"; };
 		73BAA7AC2873CCC900957FA1 /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
+		73BAA7AE2874632A00957FA1 /* viewers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viewers.png; sourceTree = "<group>"; };
+		73BAA7B02874655200957FA1 /* fake-recommendations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fake-recommendations.png"; sourceTree = "<group>"; };
 		73C2BC4D28709ECF00C526F8 /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth.png; sourceTree = "<group>"; };
 		73C2BC4E28709ECF00C526F8 /* rock-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rock-circle.png"; sourceTree = "<group>"; };
 		73C2BC4F28709ECF00C526F8 /* forest-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forest-circle.png"; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 				732CF2F22860FC95006ADD9F /* AppDelegate.swift */,
 				732CF2F42860FC95006ADD9F /* SceneDelegate.swift */,
 				732CF2FB2860FCA1006ADD9F /* Assets.xcassets */,
+				73BAA7B02874655200957FA1 /* fake-recommendations.png */,
+				73BAA7AE2874632A00957FA1 /* viewers.png */,
 				73BAA7962873BD2500957FA1 /* aterro-fla.jpg */,
 				73BAA79B2873BD2700957FA1 /* catacumba.jpg */,
 				73BAA7982873BD2600957FA1 /* jardim-botanico.jpg */,
@@ -278,10 +284,12 @@
 				73BAA7A32873BD2800957FA1 /* lagoa.jpg in Resources */,
 				732CF2FF2860FCA1006ADD9F /* LaunchScreen.storyboard in Resources */,
 				73BAA7A62873BD2800957FA1 /* morro-urca.jpg in Resources */,
+				73BAA7B12874655300957FA1 /* fake-recommendations.png in Resources */,
 				732CF2FC2860FCA1006ADD9F /* Assets.xcassets in Resources */,
 				73C2BC5228709ECF00C526F8 /* earth.png in Resources */,
 				73BAA7A92873CB2200957FA1 /* DetailingOtherPlaces.storyboard in Resources */,
 				73BAA78D28725D0A00957FA1 /* visited.png in Resources */,
+				73BAA7AF2874632B00957FA1 /* viewers.png in Resources */,
 				732CF2FA2860FC95006ADD9F /* Main.storyboard in Resources */,
 				73C2BC5428709ECF00C526F8 /* forest-circle.png in Resources */,
 				73BAA7A02873BD2800957FA1 /* parque-da-cidade.jpg in Resources */,

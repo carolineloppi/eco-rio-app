@@ -64,9 +64,11 @@ class ListAllViewController: UIViewController, UITableViewDelegate, UITableViewD
     //TODO: entender porque o didSelectRowAt não esta sendo chamado.
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
+        self.selectedPlaceId = indexPath.row
         self.selectedPlaceId = self.places[indexPath.row].id
         print("Selected Place ID Line", self.selectedPlaceId)
-        tableView.deselectRow(at: indexPath, animated: true)
+        print("ROW", indexPath.row)
+//        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

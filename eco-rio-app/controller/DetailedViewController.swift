@@ -14,6 +14,7 @@ class DetailedViewController: UIViewController {
     @IBOutlet weak var imageOfPlace: UIImageView!
     @IBOutlet weak var titleOfSection: UILabel!
     
+    @IBOutlet weak var visitorsCount: UILabel!
     var places: [Place] = []
     var id = 2
     
@@ -32,6 +33,7 @@ class DetailedViewController: UIViewController {
             
             self.aboutPlace.text =  attraction.history
             self.nameOfPlace.text =  attraction.name
+            self.visitorsCount.text = String(attraction.visitCount)
             
             self.titleOfSection.text = "Sobre"
             self.imageOfPlace.image = UIImage(named: attraction.photosURL[0] + ".jpg")
@@ -43,6 +45,8 @@ class DetailedViewController: UIViewController {
             //TODO: fix me to append all endemic species
             self.aboutPlace.text =  trail.endemicSpecies[0]
             self.nameOfPlace.text =  trail.name
+            self.visitorsCount.text = String(trail.visitCount)
+
             
             self.titleOfSection.text = "Espécies Endêmicas"
             self.imageOfPlace.image = UIImage(named: trail.photosURL[0] + ".jpg")
