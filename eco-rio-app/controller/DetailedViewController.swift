@@ -7,7 +7,16 @@
 
 import UIKit
 
-class DetailedViewController: UIViewController {
+class NearbyPlacesCell: UITableViewCell{
+    
+    @IBOutlet weak var hasVisited: UIImageView!
+    
+    @IBOutlet weak var placeName: UILabel!
+    
+    @IBOutlet weak var placeRank: UILabel!
+}
+
+class DetailedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var nameOfPlace: UILabel!
     @IBOutlet weak var aboutPlace: UILabel!
@@ -15,15 +24,20 @@ class DetailedViewController: UIViewController {
     @IBOutlet weak var titleOfSection: UILabel!
     
     @IBOutlet weak var visitorsCount: UILabel!
+    
+    @IBOutlet weak var nearbyPlacesTableView: UITableView!
+        
     var places: [Place] = []
     var id = 2
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //essa propriedade deveria ser selectedPlaces e pertencer a classe de rankeamento do padrao strategy.
         self.places = Session.getPlacesDAO().getAllPlaces()
-        print("ÏDDDD",id)
-        print(self.places.filter({$0.id==self.id})[0])
+        
+        nearbyPlacesTableView.delegate = self
+        nearbyPlacesTableView.dataSource = self
         
         
     
@@ -63,6 +77,39 @@ class DetailedViewController: UIViewController {
         
    
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+       let nearbyPlacesCell = nearbyPlacesTableView.dequeueReusableCell(withIdentifier: "nearPlacesCell2", for: indexPath) as! NearbyPlacesCell
+        
+        let rankFormatted = String(describing: self.places[indexPath.row].meanRank)
+        nearbyPlacesCell.placeRank?.text = rankFormatted
+        
+        nearbyPlacesCell.placeName?.text = self.places[indexPath.row].name
+        
+        
+        if(Session.getPlacesDAO().hasVisitedPlace(placeId: self.places[indexPath.row].id)){
+                                    
+            nearbyPlacesCell.hasVisited?.image = UIImage(named: "visited.png")
+        }
+        else{
+            nearbyPlacesCell.hasVisited?.image = UIImage(named: "unvisited.png")
+        }
+
+        
+        
+        return nearbyPlacesCell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     
     
     func evaluatePlace(){
