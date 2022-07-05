@@ -85,6 +85,7 @@
                         <outlet property="aboutPlace" destination="8Y8-Ft-aT7" id="lyB-2f-ziQ"/>
                         <outlet property="imageOfPlace" destination="Fya-hr-MnX" id="Qx5-mU-kPB"/>
                         <outlet property="nameOfPlace" destination="hIs-w1-o15" id="uNu-YY-6UT"/>
+                        <outlet property="titleOfSection" destination="B1y-Qv-bd2" id="lbU-nF-CDL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

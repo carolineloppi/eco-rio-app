@@ -12,23 +12,54 @@ class DetailedViewController: UIViewController {
     @IBOutlet weak var nameOfPlace: UILabel!
     @IBOutlet weak var aboutPlace: UILabel!
     @IBOutlet weak var imageOfPlace: UIImageView!
+    @IBOutlet weak var titleOfSection: UILabel!
     
     var places: [Place] = []
-
+    var id = 2
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.places = Session.getPlacesDAO().getAllPlaces()
-        let other = self.places[1] as! OtherAttraction
+        print("ÏDDDD",id)
+        print(self.places.filter({$0.id==self.id})[0])
+        
+        
+    
+        if (self.places.filter({$0.id==self.id})[0] is OtherAttraction) {
+            var attraction: OtherAttraction
+            attraction = self.places.filter({$0.id==self.id})[0] as! OtherAttraction
+            
+            self.aboutPlace.text =  attraction.history
+            self.nameOfPlace.text =  attraction.name
+            
+            self.titleOfSection.text = "Sobre"
+            self.imageOfPlace.image = UIImage(named: attraction.photosURL[0] + ".jpg")
+        }
+        else {
+            var trail: Trail
+            trail = self.places.filter({$0.id==self.id})[0] as! Trail
+            
+            //TODO: fix me to append all endemic species
+            self.aboutPlace.text =  trail.endemicSpecies[0]
+            self.nameOfPlace.text =  trail.name
+            
+            self.titleOfSection.text = "Espécies Endêmicas"
+            self.imageOfPlace.image = UIImage(named: trail.photosURL[0] + ".jpg")
+
+        }
+            //add specs. and images.
+    
+
+    
+        //todo atualizar para pegar pelo id. usar o filter.
         
         self.aboutPlace.contentMode = .scaleToFill
         self.aboutPlace.numberOfLines = 5
         
-        self.nameOfPlace.text =  other.name
-        self.aboutPlace.text =  other.history
-        self.imageOfPlace.image = UIImage(named: "aterro-fla.jpg")
+   
     }
+    
     
     func evaluatePlace(){
         //create evaluate object

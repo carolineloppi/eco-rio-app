@@ -17,14 +17,18 @@ class MyCustomCell: UITableViewCell{
 class ListAllViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
    
     var places: [Place] = []
-
+    var selectedPlaceId = 2;
+    
     @IBOutlet var tableView: UITableView!
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        
         tableView.delegate = self
+
+        super.viewDidLoad()
         tableView.dataSource = self
+        tableView.allowsSelection = true
         
         self.places = Session.getPlacesDAO().getAllPlaces()
     }
@@ -57,8 +61,20 @@ class ListAllViewController: UIViewController, UITableViewDelegate, UITableViewD
         return customCell
     }
     
+    //TODO: entender porque o didSelectRowAt não esta sendo chamado.
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        self.selectedPlaceId = self.places[indexPath.row].id
+        print("Selected Place ID Line", self.selectedPlaceId)
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("AQIIII")
+        if segue.destination is DetailedViewController{
+            let viewController = segue.destination as? DetailedViewController
+            viewController?.id = self.selectedPlaceId
+        }
     }
     
 }
