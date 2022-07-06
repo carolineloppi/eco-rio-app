@@ -247,10 +247,10 @@
             </objects>
             <point key="canvasLocation" x="1925" y="-27"/>
         </scene>
-        <!--ListAllViewController-->
+        <!--ListNearbyPlacesViewController-->
         <scene sceneID="U9a-cn-SC3">
             <objects>
-                <viewControllerPlaceholder storyboardName="ListAllScreen" referencedIdentifier="ListAllViewController" id="bSP-3S-tVE" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="ListAllScreen" referencedIdentifier="ListNearbyPlacesViewController" id="bSP-3S-tVE" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="t51-4j-WEg"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQf-6D-6SW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

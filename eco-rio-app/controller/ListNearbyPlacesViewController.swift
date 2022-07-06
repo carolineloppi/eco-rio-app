@@ -58,7 +58,7 @@ class ListNearbyPlacesViewController: UIViewController, UITableViewDelegate, UIT
             nearPlacesCell.visitedImg?.image = UIImage(named: "unvisited.png")
         }
 
-        nearPlacesCell.placeImg?.image = UIImage(named: self.places[indexPath.row].photosURL[0]+".png")
+        nearPlacesCell.placeImg?.image = UIImage(named: self.places[indexPath.row].photosURL[0]+".jpg")
        
 
 
@@ -70,6 +70,6 @@ class ListNearbyPlacesViewController: UIViewController, UITableViewDelegate, UIT
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 600.0;//Choose your custom row height
+        return 250.0;//Choose your custom row height
     }
 }
