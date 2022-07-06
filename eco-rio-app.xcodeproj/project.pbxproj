@@ -136,6 +136,7 @@
 		732CF2F12860FC95006ADD9F /* eco-rio-app */ = {
 			isa = PBXGroup;
 			children = (
+				73BAA7B2287515FD00957FA1 /* framework */,
 				732CF31928611CB8006ADD9F /* persistence */,
 				732CF3082860FF7A006ADD9F /* controller */,
 				732CF3072860FF6F006ADD9F /* view */,
@@ -172,15 +173,6 @@
 		732CF3062860FF63006ADD9F /* model */ = {
 			isa = PBXGroup;
 			children = (
-				732CF30928610640006ADD9F /* User.swift */,
-				732CF30B28610943006ADD9F /* Location.swift */,
-				732CF30D28610A00006ADD9F /* Place.swift */,
-				732CF30F28610E73006ADD9F /* Evaluate.swift */,
-				732CF31128610F55006ADD9F /* Trail.swift */,
-				732CF31328611019006ADD9F /* DifficultyLevelEnum.swift */,
-				732CF315286116F3006ADD9F /* OtherAttraction.swift */,
-				732CF3172861180F006ADD9F /* CategoryEnum.swift */,
-				732CF31E28611F55006ADD9F /* Login.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -211,12 +203,44 @@
 		732CF31928611CB8006ADD9F /* persistence */ = {
 			isa = PBXGroup;
 			children = (
-				732CF31A28611CEC006ADD9F /* UserDAO.swift */,
-				732CF31C28611D3C006ADD9F /* PlaceDAO.swift */,
 				733A3997286B817600160B4E /* InMemoryPlaceDAO.swift */,
 				73BAA78E28738C7700957FA1 /* InMemoryUserDAO.swift */,
 			);
 			path = persistence;
+			sourceTree = "<group>";
+		};
+		73BAA7B2287515FD00957FA1 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				73BAA7B42875162500957FA1 /* model */,
+				73BAA7B32875161A00957FA1 /* persistence */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		73BAA7B32875161A00957FA1 /* persistence */ = {
+			isa = PBXGroup;
+			children = (
+				732CF31A28611CEC006ADD9F /* UserDAO.swift */,
+				732CF31C28611D3C006ADD9F /* PlaceDAO.swift */,
+			);
+			path = persistence;
+			sourceTree = "<group>";
+		};
+		73BAA7B42875162500957FA1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				732CF30928610640006ADD9F /* User.swift */,
+				732CF30B28610943006ADD9F /* Location.swift */,
+				732CF30D28610A00006ADD9F /* Place.swift */,
+				732CF30F28610E73006ADD9F /* Evaluate.swift */,
+				732CF31128610F55006ADD9F /* Trail.swift */,
+				732CF31328611019006ADD9F /* DifficultyLevelEnum.swift */,
+				732CF315286116F3006ADD9F /* OtherAttraction.swift */,
+				732CF3172861180F006ADD9F /* CategoryEnum.swift */,
+				732CF31E28611F55006ADD9F /* Login.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
