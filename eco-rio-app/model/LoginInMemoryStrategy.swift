@@ -1,23 +1,15 @@
 //
-//  Login.swift
+//  LoginInMemoryStrategy.swift
 //  eco-rio-app
 //
-//  Created by Caroline Loppi on 20/06/22.
+//  Created by Caroline Loppi on 05/07/22.
 //
 
 import Foundation
 
-class Login {
+class LoginInMemoryStrategy: LoginStrategy{
     
-    var user:String
-    var password:String
-    
-    init(user: String, password: String){
-        self.user   = user
-        self.password = password
-    }
-    
-    func authenticate() -> Bool {
+    override func authenticate() -> Bool {
                 
         let usersDAO = Session.getUsersDAO()
         let currentUsers=usersDAO.getUsers()
@@ -31,6 +23,4 @@ class Login {
         }
         return false
     }
- 
 }
-

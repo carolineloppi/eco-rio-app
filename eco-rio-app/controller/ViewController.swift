@@ -68,7 +68,7 @@ class ViewController: UIViewController {
             let emailtmp:String = userText.text!
             let passtmp:String = passwordText.text!
             
-            let loginObject = Login(user:emailtmp, password: passtmp)
+            let loginObject = LoginInMemoryStrategy(user:emailtmp, password: passtmp)
             if(loginObject.authenticate()){
                 performSegue(withIdentifier: "telaListAll", sender: self)
             }
