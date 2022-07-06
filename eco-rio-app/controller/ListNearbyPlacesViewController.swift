@@ -9,6 +9,7 @@ import UIKit
 
 class ListNearPlacesCell: UITableViewCell{
     
+   
     @IBOutlet weak var visitedImg: UIImageView!
     @IBOutlet weak var placeName: UILabel!
     @IBOutlet weak var placeRank: UILabel!
