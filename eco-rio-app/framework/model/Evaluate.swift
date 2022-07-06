@@ -9,12 +9,12 @@ import Foundation
 
 class Evaluate {
     
-    var userRank:Float
+    var userRank:Double
     var userId:Int
     var placeId: Int
     
     
-    init(userRank: Float, userId:Int, placeId: Int){
+    init(userRank: Double, userId:Int, placeId: Int){
         self.userRank = userRank
         self.userId = userId
         self.placeId = placeId

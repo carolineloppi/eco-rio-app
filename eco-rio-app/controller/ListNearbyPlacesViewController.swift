@@ -42,7 +42,7 @@ class ListNearbyPlacesViewController: UIViewController, UITableViewDelegate, UIT
 
        let nearPlacesCell = tableView.dequeueReusableCell(withIdentifier: "listNearPlacesCell", for: indexPath) as! ListNearPlacesCell
 
-        let rankFormatted = String(describing: self.places[indexPath.row].meanRank)
+        let rankFormatted = String(describing: self.places[indexPath.row].getMeanRank())
         
         nearPlacesCell.placeRank?.text = rankFormatted
 

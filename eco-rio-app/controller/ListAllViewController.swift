@@ -42,7 +42,7 @@ class ListAllViewController: UIViewController, UITableViewDelegate, UITableViewD
         
        let customCell = tableView.dequeueReusableCell(withIdentifier: "myCustomCell", for: indexPath) as! MyCustomCell
         
-        let rankFormatted = String(describing: self.places[indexPath.row].meanRank)
+        let rankFormatted = String(describing: self.places[indexPath.row].getMeanRank())
         customCell.placeRank?.text = rankFormatted
         
         customCell.placeName?.text = self.places[indexPath.row].name

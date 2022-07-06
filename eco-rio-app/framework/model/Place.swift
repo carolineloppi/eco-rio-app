@@ -37,13 +37,9 @@ class Place {
         self.photosURL.append(url)
     }
     
-    
-    /*
-    public Ranking(){
-    sum=0
-    foreach x in evaluacion
-           sum+=x
-    return sum/ evaluations.length
+    func getMeanRank() -> Double{
+        let rankingStrategy = EcoRioRankingStrategy();
+        
+        return rankingStrategy.generateRanking(scores: self.evaluations)
     }
-    */
 }
